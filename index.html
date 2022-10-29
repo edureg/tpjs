@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tp Integrador Bootstrap</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="/tpjs/assets/css/estilos.css" rel="stylesheet">
+
+<script>
+
+var framefenster = document.getElementsByTagName("iFrame");
+ var auto_resize_timer = window.setInterval("autoresize_frames()", 400);
+ function autoresize_frames() {
+   for (var i = 0; i < framefenster.length; ++i) {
+       if(framefenster[i].contentWindow.document.body){
+         var framefenster_size = framefenster[i].contentWindow.document.body.offsetHeight;
+         if(document.all && !window.opera) {
+           framefenster_size = framefenster[i].contentWindow.document.body.scrollHeight;
+         }
+         framefenster[i].style.height = framefenster_size + 'px';
+       }
+   }
+ }
+
+</script>
+
+</head>
+
+<body>
+  <div class="container-fluid margenes">
+    <!-- Contenedor de las 2 barras -->
+    <div class="lasdosbarras m-0s colorbarra px-lg-4 alineacion">
+
+      <!-- Aca viene la barra con la imagen y texto -->
+      <nav class="navbar colorbarra align-content-between">
+        <div class="container-fluid">
+          <a class="navbar-brand colorbarra fs-5" href="/tpjs/index.html">
+            <img src="/tpjs/assets/img/codoacodo.png" alt="Logo" width="100" height="60" class="d-inline-block ">
+            Conf Bs As
+          </a>
+        </div>
+      </nav>
+
+      <!-- Aca viene la barra con los textos -->
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand colorbarra textoblanco" href="/tpjs/index.html">La conferencia</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link textogris" href="/tpjs/principal.html" target="contenido">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textogris" href="/tpjs/index.html">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textogris" href="/tpjs/principal.html" target="contenido">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textoverde" href="/tpjs/registro.html" target="contenido">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Contenedor de la foto de Obras Sanitarias -->
+    <div class="container-fluid g-0">
+      <div class="card g-0">
+        <img src="/tpjs/assets/img/ba1.jpg" alt="Ex Obras Sanitarias de la Nacion" class="fotoosn">
+        <div class="card-img-overlay">
+          <p class="confbsas">Conf Bs As</p>
+          <p class="textoenfoto">Bs As llega por primera vez a Argentina. Un evento para compartir con<br>
+            nuestra comunidad el conocimiento y experiencia de los expertos que<br>
+            están creando el futuro de Internet. Ven a conocer a miembros del<br>
+            evento, a otros estudiantes de Codo a Codo y los oradores de primer<br>
+            nivel que tenemos para tí. Te esperamos!<br><br>
+            <a href="/tpjs/principal.html" target="contenido"><span class="botonorador">Quiero ser orador</span></a> <a
+              href="/tpjs/registro.html" target="contenido"> <span class="botontickets">Comprar Tickets</span></a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <section class="container-fluid iframeprincipal">
+      <iframe src="/tpjs/principal.html" height="1024px" width="100%" name="contenido" frameborder="0" scrolling="no">
+      </iframe>
+    </section>
+
+    <!-- Barra del pie de la pagina -->
+
+    <nav class="navbar navbar-expand-sm">
+      <!-- enlaces -->
+      <ul class="navbar-nav w-100 justify-content-around px-5" style="background-color: #363A40;">
+        <li class="nav-item">
+          <a class="nav-link enlacesnav" href="#">Preguntas<br>Frecuentes</a>
+        </li>
+        <li class="nav-item navbar-text">
+          <a class="nav-link enlacesnav" href="#">Contactanos</a>
+        </li>
+        <li class="nav-item  navbar-text">
+          <a class="nav-link enlacesnav" href="#">Prensa</a>
+        </li>
+        <li class="nav-item  navbar-text">
+          <a class="nav-link enlacesnav" href="#">Conferencias</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link enlacesnav" href="#">Terminos y<br>condiciones</a>
+        </li>
+        <li class="nav-item  navbar-text">
+          <a class="nav-link enlacesnav" href="#">Privacidad</a>
+        </li>
+        <li class="nav-item  navbar-text">
+          <a class="nav-link enlacesnav" href="#">Estudiantes</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
